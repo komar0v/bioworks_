@@ -94,7 +94,7 @@
                                         <button type="submit" class="btn btn-primary mr-1 mb-1"><i class="feather icon-save"></i> Simpan</button>
                                         <?= form_close(); ?>
 
-                                        <button type="button" class="btn btn-danger mr-1 mb-1"><i class="feather icon-trash-2"></i> Hapus</button>
+                                        <!-- <button type="button" class="btn btn-danger mr-1 mb-1"><i class="feather icon-trash-2"></i> Hapus</button> -->
                                     </div>
                                 </div>
                             </div>
