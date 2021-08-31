@@ -14,6 +14,7 @@
 <script src="<?= base_url('app_assets') ?>/vendors/js/vendors.min.js"></script>
 <script src="<?= base_url('app_assets') ?>/vendors/js/forms/select/select2.full.min.js"></script>
 <script src="<?= base_url('app_assets') ?>/vendors/js/extensions/toastr.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.1.2/sweetalert2.all.js"></script>
 <!-- BEGIN Vendor JS-->
 
 <!-- BEGIN: Page Vendor JS-->
@@ -26,11 +27,11 @@
 <!-- END: Theme JS-->
 
 <!-- BEGIN: Page JS-->
+<script>
+    $(document).ready(function() {
 
-<?php if (base_url(uri_string()) == base_url('Admin/tentang_app')) { ?>
-
-    <!-- TENTANG PAGE-->
-<?php } ?>
+    });
+</script>
 
 <?php if (base_url(uri_string()) == base_url('Admin/kelola_guru') || base_url(uri_string()) == base_url('Admin/kelola_murid')) { ?>
     <script>

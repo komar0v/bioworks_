@@ -15,6 +15,7 @@
     <link rel="stylesheet" type="text/css" href="<?= base_url('app_assets') ?>/vendors/css/ui/prism.min.css">
     <link rel="stylesheet" type="text/css" href="<?= base_url('app_assets') ?>/vendors/css/tables/datatable/datatables.min.css">
     <link rel="stylesheet" type="text/css" href="<?= base_url('app_assets') ?>/css/plugins/animate/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.1.2/sweetalert2.min.css"/>
     <!-- END: Vendor CSS-->
 
     <!-- BEGIN: Theme CSS-->
@@ -66,7 +67,8 @@
                         <li class="dropdown dropdown-user nav-item"><a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
                                 <div class="user-nav d-sm-flex d-none"><span class="user-name text-bold-600"><?= session()->get('namalengkap_akunPengguna') ?></span><span class="user-status"><?= session()->get('level_akunPengguna') ?></span></div><span><img class="round" src="https://www.nicepng.com/png/detail/128-1280406_view-user-icon-png-user-circle-icon-png.png" alt="avatar" height="40" width="40"></span>
                             </a>
-                            <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#"><i class="feather icon-user"></i> Edit Profile</a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <!-- <a class="dropdown-item" href="#"><i class="feather icon-user"></i> Edit Profile</a> -->
                                 <div class="dropdown-divider"></div><a class="dropdown-item" href="<?= base_url('Credentials/keluar') ?>"><i class="feather icon-power"></i> Logout</a>
                             </div>
                         </li>

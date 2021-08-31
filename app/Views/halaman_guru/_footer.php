@@ -14,6 +14,7 @@
 <script src="<?= base_url('app_assets') ?>/vendors/js/vendors.min.js"></script>
 <script src="<?= base_url('app_assets') ?>/vendors/js/forms/select/select2.full.min.js"></script>
 <script src="<?= base_url('app_assets') ?>/vendors/js/extensions/toastr.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.1.2/sweetalert2.all.js"></script>
 <!-- BEGIN Vendor JS-->
 
 <!-- BEGIN: Page Vendor JS-->

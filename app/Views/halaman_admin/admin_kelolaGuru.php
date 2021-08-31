@@ -29,7 +29,7 @@
                         <button class="btn-icon btn btn-primary btn-round btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="feather icon-plus"></i></button>
                         <div class="dropdown-menu dropdown-menu-right">
                             <a class="dropdown-item" href="<?= base_url('Admin/tambah_guru')?>">Tambah Data Guru</a>
-                            <a class="dropdown-item" href="#">Import Data Guru</a>
+                            <!-- <a class="dropdown-item" href="#">Import Data Guru</a> -->
                         </div>
                     </div>
                 </div>

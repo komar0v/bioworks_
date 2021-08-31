@@ -42,11 +42,11 @@
                     </div>
                 </div>
             </section>
-            <!-- <div class="row">
+            <div class="row">
                 <div class="col">
                 <image class="img-fluid" src="https://source.unsplash.com/1200x250/?panoramic"></image>
                 </div>
-            </div> -->
+            </div>
             <!--/ Description -->
             
 
