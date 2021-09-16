@@ -45,8 +45,57 @@
                                                 </div>
                                                 <textarea required name="pertanyaan_evalnontes" id="pertanyaan_pg" class="summernote" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
                                             </div>
-                                            <hr>
 
+                                        </div>
+
+                                        <div class="row pt-2">
+                                            <div class="col">
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered mb-0">
+
+                                                        <thead>
+                                                            <tr>
+                                                                <th></th>
+                                                                <th class="text-center">1</th>
+                                                                <th class="text-center">2</th>
+                                                                <th class="text-center">3</th>
+                                                                <th class="text-center">4</th>
+                                                                <th></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+
+                                                            <tr>
+                                                                <td class="text-right">Tidak Setuju</td>
+                                                                <td class="text-center">
+                                                                    <div class="form-check">
+                                                                        <input disabled class="form-check-input" type="radio" value="1">
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    <div class="form-check">
+                                                                        <input disabled class="form-check-input" type="radio" value="2">
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    <div class="form-check">
+                                                                        <input disabled class="form-check-input" type="radio" value="3">
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-center">
+                                                                    <div class="form-check">
+                                                                        <input disabled class="form-check-input" type="radio" value="4">
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-left">Setuju</td>
+                                                            </tr>
+
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
