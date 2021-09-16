@@ -19,6 +19,7 @@ class EvaluasiTes extends BaseController
     public function __construct()
     {
 		helper('form');
+        helper('text');
         $this->GURU_access_Level = 'guru';
         $this->MURID_access_Level = 'murid';
         $this->Guru_ = new M_guru();

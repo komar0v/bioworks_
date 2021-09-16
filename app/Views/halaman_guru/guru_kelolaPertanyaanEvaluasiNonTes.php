@@ -53,7 +53,9 @@
                                         <tbody>
                                             <?php foreach ($list_pertanyaanEvaluasiNonTes as $detailPertanyaanEvalNonTes) { ?>
                                                 <tr>
-                                                    <td><?= strip_tags(character_limiter($detailPertanyaanEvalNonTes['pertanyaan'],20)) ?></td>
+                                                    <td><?= word_limiter(strip_tags($detailPertanyaanEvalNonTes['pertanyaan']),3) ?>
+                                                    ...
+                                                    </td>
                                                     <td>
                                                         <?= '<button onclick="location.href=\'' . base_url('Evaluasi_/EvaluasiNonTes/e') . '/' . $detailPertanyaanEvalNonTes['id_pertanyaan'] . '\';" type="button" class="btn btn-relief-success mr-1 mb-1"> <i class="feather icon-edit-1"></i> Edit</button>' ?>
                                                     </td>

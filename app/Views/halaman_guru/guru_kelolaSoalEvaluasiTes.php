@@ -67,7 +67,11 @@
 
                                                     <?php foreach($list_soalEvaluasiTesPG as $detailSoalEvaluasi){?>
                                                         <tr>
-                                                            <td><?= strip_tags(substr($detailSoalEvaluasi['pertanyaan_soal'],0,20))?>...</td>
+                                                            <td><?php
+                                                            $string = explode(" ", strip_tags($detailSoalEvaluasi['pertanyaan_soal']));
+                                                            $ambil3kata = implode(" ", array_splice($string, 0, 3));
+                                                            echo ($ambil3kata);
+                                                            ?>...</td>
                                                             <td><?= '<button onclick="location.href=\''.base_url('Evaluasi_/EvaluasiTes/e').'/'.$detailSoalEvaluasi['id_soal'].'\';" type="button" class="btn btn-relief-success mr-1 mb-1"> <i class="feather icon-edit-1"></i> Edit</button>'?></td>
                                                         </tr>
                                                     <?php }?>
@@ -90,7 +94,10 @@
 
                                                     <?php foreach($list_soalEvaluasiTesEssay as $detailSoalEvaluasiEssay){?>
                                                         <tr>
-                                                            <td><?= strip_tags(substr($detailSoalEvaluasiEssay['pertanyaan_soal'],0,20))?>...</td>
+                                                            <td><?php
+                                                            $ambil3kata = word_limiter(strip_tags($detailSoalEvaluasiEssay['pertanyaan_soal']),3);
+                                                            echo ($ambil3kata);
+                                                            ?>...</td>
                                                             <td><?= '<button onclick="location.href=\''.base_url('Evaluasi_/EvaluasiTes/ee').'/'.$detailSoalEvaluasiEssay['id_soal'].'\';" type="button" class="btn btn-relief-success mr-1 mb-1"> <i class="feather icon-edit-1"></i> Edit</button>'?></td>
                                                         </tr>
                                                     <?php }?>
