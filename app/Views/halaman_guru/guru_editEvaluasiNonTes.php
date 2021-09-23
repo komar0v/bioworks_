@@ -78,6 +78,7 @@
                                                                 <option <?= $detailEvaluasiNonTes['jenis_evaluasi'] == 'tujuan' ? 'selected' : ''; ?> value="tujuan">Penilaian Tujuan Pembelajaran</option>
                                                                 <option <?= $detailEvaluasiNonTes['jenis_evaluasi'] == 'peer' ? 'selected' : ''; ?> value="peer">Peer-Assessment</option>
                                                                 <option <?= $detailEvaluasiNonTes['jenis_evaluasi'] == 'self' ? 'selected' : ''; ?> value="self">Self-Assessment</option>
+                                                                <option <?= $detailEvaluasiNonTes['jenis_evaluasi'] == 'umpan' ? 'selected' : ''; ?> value="umpan">Penilaian Umpan Balik</option>
                                                             </select>
                                                         </fieldset>
                                                     </div>

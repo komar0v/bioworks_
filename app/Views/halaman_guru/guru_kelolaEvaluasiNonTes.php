@@ -28,7 +28,7 @@
                     <div class="dropdown">
                         <button class="btn-icon btn btn-primary btn-round btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="feather icon-plus"></i></button>
                         <div class="dropdown-menu dropdown-menu-right">
-                            <a class="dropdown-item" href="<?= base_url('Guru/tambah_evaluasi_non_tes')?>">Tambah Evaluasi Non Tes</a>
+                            <a class="dropdown-item" href="<?= base_url('Guru/tambah_evaluasi_non_tes') ?>">Tambah Evaluasi Non Tes</a>
                         </div>
                     </div>
                 </div>
@@ -42,7 +42,22 @@
                     <div class="card">
                         <div class="card-header">
                             <h4 class="card-title">Evaluasi Non Tes</h4>
-
+                            <a class="text-bold-500" data-toggle="modal" data-target="#default" ><i class="fa fa-info-circle"></i> Petunjuk pengisian</a>
+                            <div class="modal fade text-left" id="default" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title" id="myModalLabel1">Petunjuk Pengisian</h4>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Pengisian dilakukan dengan masuk ke menu "Kelola Pertanyaan"</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="card-content">
                             <div class="card-body card-dashboard">
@@ -58,27 +73,28 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                        <?php foreach($listEvaluasiNonTes as $detailEvaluasi){?>
-                                            <tr>
-                                                <td><?=$detailEvaluasi['judul_evaluasi']?></td>
-                                                <td>
-                                                    <?= $detailEvaluasi['status_evaluasi'] == 'nonaktif' ? '<div class="badge badge-pill badge-info">belum aktif</div>' : ''; ?>
-                                                    <?= $detailEvaluasi['status_evaluasi'] == 'aktif' ? '<div class="badge badge-pill badge-success">aktif</div>' : ''; ?>
-                                                </td>
-                                                <td>
-                                                    <?= $detailEvaluasi['jenis_evaluasi'] == 'tujuan' ? '<div style="background-color: #202124;" class="badge badge-pill">Penilaian Tujuan Pembelajaran</div>' : ''; ?>
-                                                    <?= $detailEvaluasi['jenis_evaluasi'] == 'peer' ? '<div style="background-color: #312ECA;"  class="badge badge-pill">Peer-Assessment</div>' : ''; ?>
-                                                    <?= $detailEvaluasi['jenis_evaluasi'] == 'self' ? '<div style="background-color: #ED4878;" class="badge badge-pill">Self-Assessment</div>' : ''; ?>
-                                                </td>
-                                                <td>
-                                                    <?= '<button onclick="location.href=\''.base_url('Guru/evaluasi_non_tes').'/'.$detailEvaluasi['id_evaluasi_non_tes'].'\';" type="button" class="btn btn-relief-success mr-1 mb-1"> <i class="feather icon-edit-1"></i> Edit</button>'?>
-                                                    |
-                                                    <?= '<button onclick="location.href=\''.base_url('Evaluasi_/EvaluasiNonTes/i').'/'.$detailEvaluasi['id_evaluasi_non_tes'].'\';" type="button" class="btn btn-relief-info mr-1 mb-1"> <i class="feather icon-file-text"></i> Kelola Pertanyaan</button>'?>
-                                                </td>
-                                            </tr>
-                                        <?php }?>
-                                            
-                                            
+                                            <?php foreach ($listEvaluasiNonTes as $detailEvaluasi) { ?>
+                                                <tr>
+                                                    <td><?= $detailEvaluasi['judul_evaluasi'] ?></td>
+                                                    <td>
+                                                        <?= $detailEvaluasi['status_evaluasi'] == 'nonaktif' ? '<div class="badge badge-pill badge-info">belum aktif</div>' : ''; ?>
+                                                        <?= $detailEvaluasi['status_evaluasi'] == 'aktif' ? '<div class="badge badge-pill badge-success">aktif</div>' : ''; ?>
+                                                    </td>
+                                                    <td>
+                                                        <?= $detailEvaluasi['jenis_evaluasi'] == 'tujuan' ? '<div style="background-color: #202124;" class="badge badge-pill">Penilaian Tujuan Pembelajaran</div>' : ''; ?>
+                                                        <?= $detailEvaluasi['jenis_evaluasi'] == 'peer' ? '<div style="background-color: #312ECA;"  class="badge badge-pill">Peer-Assessment</div>' : ''; ?>
+                                                        <?= $detailEvaluasi['jenis_evaluasi'] == 'self' ? '<div style="background-color: #ED4878;" class="badge badge-pill">Self-Assessment</div>' : ''; ?>
+                                                        <?= $detailEvaluasi['jenis_evaluasi'] == 'umpan' ? '<div style="background-color: #5f5fc4;" class="badge badge-pill">Penilaian Umpan Balik</div>' : ''; ?>
+                                                    </td>
+                                                    <td>
+                                                        <?= '<button onclick="location.href=\'' . base_url('Guru/evaluasi_non_tes') . '/' . $detailEvaluasi['id_evaluasi_non_tes'] . '\';" type="button" class="btn btn-relief-success mr-1 mb-1"> <i class="feather icon-edit-1"></i> Edit</button>' ?>
+                                                        |
+                                                        <?= '<button onclick="location.href=\'' . base_url('Evaluasi_/EvaluasiNonTes/i') . '/' . $detailEvaluasi['id_evaluasi_non_tes'] . '\';" type="button" class="btn btn-relief-info mr-1 mb-1"> <i class="feather icon-file-text"></i> Kelola Pertanyaan</button>' ?>
+                                                    </td>
+                                                </tr>
+                                            <?php } ?>
+
+
                                         </tbody>
                                     </table>
                                 </div>

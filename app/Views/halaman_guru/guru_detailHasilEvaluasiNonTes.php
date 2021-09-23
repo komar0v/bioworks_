@@ -39,6 +39,7 @@
                                 <?= $detailEvaluasiNonTes['jenis_evaluasi'] == 'tujuan' ? 'Penilaian Tujuan Pembelajaran' : ''; ?>
                                 <?= $detailEvaluasiNonTes['jenis_evaluasi'] == 'peer' ? 'Peer-Assessment' : ''; ?>
                                 <?= $detailEvaluasiNonTes['jenis_evaluasi'] == 'self' ? 'Self-Assessment' : ''; ?>
+                                <?= $detailEvaluasiNonTes['jenis_evaluasi'] == 'umpan' ? 'Penilaian Umpan Balik' : ''; ?>
                             </p>
                         </div>
                         <div class="card-content">

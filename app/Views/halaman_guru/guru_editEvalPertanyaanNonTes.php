@@ -14,6 +14,7 @@
                             <?= $detail_pertanyaan['jenis_evaluasi'] == 'tujuan' ? 'Penilaian Tujuan Pembelajaran' : ''; ?>
                             <?= $detail_pertanyaan['jenis_evaluasi'] == 'peer' ? 'Peer-Assessment' : ''; ?>
                             <?= $detail_pertanyaan['jenis_evaluasi'] == 'self' ? 'Self-Assessment' : ''; ?>
+                            <?= $detail_pertanyaan['jenis_evaluasi'] == 'umpan' ? 'Penilaian Umpan Balik' : ''; ?>
                         </h2>
                         <div class="breadcrumb-wrapper col-12">
                             <ol class="breadcrumb">
@@ -58,10 +59,10 @@
                                                         <thead>
                                                             <tr>
                                                                 <th></th>
-                                                                <th class="text-center">1</th>
-                                                                <th class="text-center">2</th>
-                                                                <th class="text-center">3</th>
-                                                                <th class="text-center">4</th>
+                                                                <th class="text-center">Kurang</th>
+                                                                <th class="text-center">Cukup</th>
+                                                                <th class="text-center">Baik</th>
+                                                                <th class="text-center">Sangat Baik</th>
                                                                 <th></th>
                                                             </tr>
                                                         </thead>

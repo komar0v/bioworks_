@@ -79,6 +79,7 @@
                                                                 <option value="tujuan">Penilaian Tujuan Pembelajaran</option>
                                                                 <option value="peer">Peer-Assessment</option>
                                                                 <option value="self">Self-Assessment</option>
+                                                                <option value="umpan">Penilaian Umpan Balik</option>
                                                             </select>
                                                         </fieldset>
                                                     </div>

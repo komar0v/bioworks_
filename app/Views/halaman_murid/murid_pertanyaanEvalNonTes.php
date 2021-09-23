@@ -10,7 +10,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="page-title-box d-flex align-items-center justify-content-between">
-                    <h4 class="page-title mb-0 font-size-18">Pertanyaan Evaluasi Non Tes</h4>
+                    <h4 class="page-title mb-0 font-size-18">Pernyataan Evaluasi Non Tes</h4>
 
                     <div class="page-title-right">
                         <ol class="breadcrumb m-0">
@@ -40,7 +40,7 @@
                                         <thead>
                                             <tr>
                                                 <th>#</th>
-                                                <th>Pertanyaan</th>
+                                                <th>Pernyataan</th>
                                                 <th class="text-center" colspan="4">Skala</th>
                                             </tr>
                                             <tr>
@@ -115,6 +115,7 @@
                                 <?= $detail_evaluasiNonTes['jenis_evaluasi'] == 'tujuan' ? 'Penilaian Tujuan Pembelajaran' : ''; ?>
                                 <?= $detail_evaluasiNonTes['jenis_evaluasi'] == 'peer' ? 'Peer-Assessment' : ''; ?>
                                 <?= $detail_evaluasiNonTes['jenis_evaluasi'] == 'self' ? 'Self-Assessment' : ''; ?>
+                                <?= $detail_evaluasiNonTes['jenis_evaluasi'] == 'umpan' ? 'Penilaian Umpan Balik' : ''; ?>
                             </dd>
                         </dl>
                         <dl class="row">

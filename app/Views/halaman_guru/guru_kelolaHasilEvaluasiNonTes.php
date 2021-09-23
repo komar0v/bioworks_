@@ -59,6 +59,7 @@
                                                     <?= $detailEvaluasi['jenis_evaluasi'] == 'tujuan' ? '<div style="background-color: #202124;" class="badge badge-pill">Penilaian Tujuan Pembelajaran</div>' : ''; ?>
                                                     <?= $detailEvaluasi['jenis_evaluasi'] == 'peer' ? '<div style="background-color: #312ECA;"  class="badge badge-pill">Peer-Assessment</div>' : ''; ?>
                                                     <?= $detailEvaluasi['jenis_evaluasi'] == 'self' ? '<div style="background-color: #ED4878;" class="badge badge-pill">Self-Assessment</div>' : ''; ?>
+                                                    <?= $detailEvaluasi['jenis_evaluasi'] == 'umpan' ? '<div style="background-color: #5f5fc4;" class="badge badge-pill">Penilaian Umpan Balik</div>' : ''; ?>
                                                 </td>
                                                 <td>
                                                     <?= '<button onclick="location.href=\''.base_url('Guru/detail_evaluasi_non_tes/').'/'.$detailEvaluasi['id_evaluasi_non_tes'].'\';" type="button" class="btn btn-relief-info mr-1 mb-1"> <i class="feather icon-eye"></i> Detail</button>'?>

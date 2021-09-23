@@ -24,6 +24,7 @@
                     <li class="nav-item waves-effect waves-light btn btn-outline-primary" data-filter=".filter-tujuan">Tujuan Pembelajaran</li>
                     <li class="nav-item waves-effect waves-light btn btn-outline-primary" data-filter=".filter-peer">Peer-Assessment</li>
                     <li class="nav-item waves-effect waves-light btn btn-outline-primary" data-filter=".filter-self">Self-Assessment</li>
+                    <li class="nav-item waves-effect waves-light btn btn-outline-primary" data-filter=".filter-umpan">Penilaian Umpan Balik</li>
                 </ul>
             </div>
         </div>
@@ -46,6 +47,7 @@
                             <?= $detailEvaluasiNonTes['jenis_evaluasi'] == 'tujuan' ? '<div style="background-color: #202124;" class="text-white badge badge-pill">Penilaian Tujuan Pembelajaran</div>' : ''; ?>
                             <?= $detailEvaluasiNonTes['jenis_evaluasi'] == 'peer' ? '<div style="background-color: #312ECA;"  class="text-white badge badge-pill">Peer-Assessment</div>' : ''; ?>
                             <?= $detailEvaluasiNonTes['jenis_evaluasi'] == 'self' ? '<div style="background-color: #ED4878;" class="text-white badge badge-pill">Self-Assessment</div>' : ''; ?>
+                            <?= $detailEvaluasiNonTes['jenis_evaluasi'] == 'umpan' ? '<div style="background-color: #5f5fc4;" class="text-white badge badge-pill">Penilaian Umpan Balik</div>' : ''; ?>
                         </div>
                         <h3 class="text-center"><?= $detailEvaluasiNonTes['nilai_akhir'] ?></h3>
                         <h4 class="badge badge-info">
